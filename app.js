@@ -222,10 +222,10 @@ app.post('/create-user',upload.array('dp', 10),  async (req, res)=>{
 // myExpress.static()
 // yeh express ko btata h kay kis folder m aapne files ko dekhna ha
 
-let fileServer = myExpress.static('./server/build');
+let fileServer = myExpress.static('./build');
 
 app.use(fileServer);
-app.use(myExpress.static('./server/mera-upload'));
+app.use(myExpress.static('./mera-upload'));
 
 app.listen(7072, ()=>{
     console.log('server chaling')
