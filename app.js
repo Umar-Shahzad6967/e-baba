@@ -211,13 +211,13 @@ app.post('/create-user',upload.array('dp', 10),  async (req, res)=>{
     // console.log('data awat');
 });
 
-app.get('/', (incoming, outgoing)=>{
+// app.get('/', (incoming, outgoing)=>{
 
-    console.log(incoming.ip);
+//     console.log(incoming.ip);
     
-    outgoing.end('ok hogya')
+//     outgoing.end('ok hogya')
 
-})
+// })
 
 // myExpress.static()
 // yeh express ko btata h kay kis folder m aapne files ko dekhna ha
